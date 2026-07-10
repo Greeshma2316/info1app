@@ -14,7 +14,7 @@ function Viewall()
     else
       navigate('/login');
 
-    },[]);
+    },[navigate]);
     return(
 
         <div>

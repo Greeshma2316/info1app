@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 function Logout(props)
 {
   const navigate=useNavigate();
-  const [x,setx] = useState(0);
+  
 
   useEffect(()=>{
     sessionStorage.removeItem('adinfo');
     sessionStorage.removeItem('empinfo');
     props.setloginStatus("gen");
     navigate('/login');
-  },[]);
+  },[navigate,props]);
 
     return(
 

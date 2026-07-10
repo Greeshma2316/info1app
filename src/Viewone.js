@@ -15,7 +15,7 @@ function Viewone()
         else
           navigate('/login');
     
-        },[]);
+        },[navigate]);
         
                 
     return(
